@@ -7,9 +7,14 @@ import { Component, OnInit } from '@angular/core';
 })
 export class HomeComponent implements OnInit {
 
+  isDisplayMobileMenu = false
   constructor() { }
 
   ngOnInit(): void {
+  }
+
+  onDisplaySideMenu(isDisplayMenu: boolean) {
+    this.isDisplayMobileMenu = isDisplayMenu;
   }
 
 }

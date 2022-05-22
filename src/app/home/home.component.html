@@ -1,1 +1,4 @@
-<p>home works!</p>
+<app-home-header (displayMenu)="onDisplaySideMenu($event)"></app-home-header>
+<app-car-model></app-car-model>
+<app-modile-side-menu (displayMenu)="onDisplaySideMenu($event)" [isDisplay]="isDisplayMobileMenu">
+</app-modile-side-menu>

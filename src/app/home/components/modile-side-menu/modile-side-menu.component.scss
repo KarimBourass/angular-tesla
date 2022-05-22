@@ -1,0 +1,41 @@
+.open-dialog {
+  width: 320px;
+  right: -320px;
+  -webkit-animation: slide 0.3s forwards;
+  -webkit-animation-delay: 0.3s;
+  animation: slide 0.3s forwards;
+  animation-delay: 0.3s;
+
+  @-webkit-keyframes slide {
+    100% {
+      right: 0;
+    }
+  }
+
+  @keyframes slide {
+    100% {
+      right: 0;
+    }
+  }
+}
+
+.close-dialog {
+  width: 320px;
+  right: 0;
+  -webkit-animation: slide-out 0.3s forwards;
+  -webkit-animation-delay: 0.3s;
+  animation: slide-out 0.3s forwards;
+  animation-delay: 0.3s;
+
+  @-webkit-keyframes slide-out {
+    100% {
+      right: -320px;
+    }
+  }
+
+  @keyframes slide-out {
+    100% {
+      right: -320px;
+    }
+  }
+}

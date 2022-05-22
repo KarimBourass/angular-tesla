@@ -1,0 +1,11 @@
+.link-styling {
+  @apply font-semibold px-3 py-1 cursor-pointer rounded-lg ease-in duration-200;
+  &:hover {
+    background-color: rgba(#000000, 0.1);
+  }
+}
+
+
+.mobile-menu{
+  background-color: rgba(#000000, 0.1);
+}
