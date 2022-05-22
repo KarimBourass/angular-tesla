@@ -1,11 +1,11 @@
-<div class="absolute top-0 h-screen right-0 overflow-x-hidden w-80">
+<div class="absolute min-h-screen top-0 right-0 overflow-x-hidden" [ngStyle]="{'width': isDisplay ? '320px' : '0' }">
 
 
   <div class="absolute h-screen p-10 z-20 bg-white drop-shadow-2xl"
     [ngClass]="isDisplay ? 'open-dialog' : 'close-dialog'">
 
     <button aria-label="close menu button" class="block ml-auto" (click)="onCloseMenu()">
-      <i class="Close menu icon">close</i>
+      <i class="material-icons" aria-label="Close menu icon">close</i>
     </button>
 
     <nav class="mt-10 flex flex-col gap-y-3">
