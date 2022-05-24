@@ -11,17 +11,6 @@ export class CarModelComponent implements OnInit {
   models: any[] = [
     {
       "id": 0,
-      "title": "Model S",
-      "description": "Order Online for Touchless Delivery",
-      "image": "model-s.jpg",
-      "range": "390",
-      "time": "1.99",
-      "topSpeed": "200",
-      "peakPower": "1,020",
-      "class": 'a'
-    },
-    {
-      "id": 1,
       "title": "Model 3",
       "description": "Order Online for Touchless Delivery",
       "image": "model-3.jpg",
@@ -31,6 +20,17 @@ export class CarModelComponent implements OnInit {
       "peakPower": "900"
       ,
       "class": 'b'
+    },
+    {
+      "id": 1,
+      "title": "Model S",
+      "description": "Order Online for Touchless Delivery",
+      "image": "model-s.jpg",
+      "range": "390",
+      "time": "1.99",
+      "topSpeed": "200",
+      "peakPower": "1,020",
+      "class": 'a'
     },
     {
       "id": 2,
