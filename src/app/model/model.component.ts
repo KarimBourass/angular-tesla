@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { ActivatedRoute } from '@angular/router';
 
 @Component({
   selector: 'app-model',
@@ -7,22 +8,16 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ModelComponent implements OnInit {
 
-  model = {
-    "id": 0,
-    "title": "Model 3",
-    "description": "Order Online for Touchless Delivery",
-    "image": "model-3.jpg",
-    "range": "400",
-    "time": "2.99",
-    "topSpeed": "180",
-    "peakPower": "900"
-    ,
-    "class": 'b'
-  }
+  modelId!: string;
+  modelImagePath!: string;
 
-  constructor() { }
+  constructor(private route: ActivatedRoute) { }
 
   ngOnInit(): void {
+    this.route.params.subscribe((params: any) => {
+      this.modelId = params['id'];
+      this.modelImagePath = `url(/assets/images/model-${this.modelId}.jpg)`
+    });
   }
 
 }
