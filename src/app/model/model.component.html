@@ -1,0 +1,37 @@
+<div class="relative h-screen flex flex-col items-center pt-32 background-image"
+  [style.background-image]="'url(/assets/images/' + model.image + ')'">
+  <h1 class="text-5xl font-semibold pb-2 text-white">{{model.title}}</h1>
+  <div class="absolute bottom-0 h-48 flex justify-center items-center w-full blak-gradient-bg">
+    <div
+      class="w-full px-4 bottom-10 flex flex-col items-center gap-y-4 max-w-3xl lg:max-w-6xl text-white lg:flex-row lg:items-center">
+      <div class="flex w-full lg:w-fit justify-around grow">
+        <div class="text-center">
+          <p class="text-xl lg:text-3xl font-semibold">396 mi</p>
+          <p class="text-sm lg:text-lg">Range (EPA est.)</p>
+        </div>
+        <div class="text-center">
+          <p class="text-xl lg:text-3xl font-semibold">1.99s</p>
+          <p class="text-sm lg:text-lg">0-60 mph*</p>
+        </div>
+        <div class="text-center">
+          <p class="text-xl lg:text-3xl font-semibold">200mph</p>
+          <p class="text-sm lg:text-lg">Top Speed</p>
+        </div>
+        <div class="text-center hidden lg:inline">
+          <p class="text-xl lg:text-3xl font-semibold">1,020 hp</p>
+          <p class="text-sm lg:text-lg">Peak Power</p>
+        </div>
+      </div>
+      <button class="px-10 py-1 border-4 text-sm border-white rounded-full h-10 w-full md:w-64 lg:w-52">ORDER
+        NOW</button>
+    </div>
+  </div>
+
+</div>
+
+<div class="relative h-screen flex flex-col items-center pt-32  background-interior"
+  [style.background-image]="'url(/assets/images/interior.jpg)'">
+  <div class="absolute top-0 w-full h-60 blak-gradient-bg-top text-center">
+    <h1 class="text-3xl lg:text-4xl font-semibold pb-2 text-white mt-20">Interior of the Future</h1>
+  </div>
+</div>
