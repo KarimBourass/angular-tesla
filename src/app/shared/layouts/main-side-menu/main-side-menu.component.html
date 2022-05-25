@@ -1,0 +1,38 @@
+<div *ngIf="isDisplay" [@inOutAnimation]
+  class="fixed h-screen top-0 right-0 w-80 py-6 px-10 z-20 bg-white drop-shadow-2xl overflow-auto">
+
+  <button aria-label="close menu button" class="block ml-auto" (click)="onCloseMenu()">
+    <i class="material-icons" aria-label="Close menu icon">close</i>
+  </button>
+
+  <nav class="mt-10 flex flex-col gap-y-4">
+    <div class="flex flex-col gap-y-4 lg:hidden">
+      <a href="/" class="font-semibold">Model S</a>
+      <a href="/" class="font-semibold">Model 3</a>
+      <a href="/" class="font-semibold">Model x</a>
+      <a href="/" class="font-semibold">Model y</a>
+    </div>
+    <a href="/" class="font-semibold">Model Roof</a>
+    <a href="/" class="font-semibold">Test Drive</a>
+    <a href="/" class="font-semibold">Trade-In</a>
+    <a href="/" class="font-semibold">Insurance</a>
+    <a href="/" class="font-semibold">Powerwall</a>
+    <a href="/" class="font-semibold">Utilities</a>
+    <a href="/" class="font-semibold">Charging</a>
+    <a href="/" class="font-semibold">Find Us</a>
+    <a href="/" class="font-semibold">Support</a>
+    <a href="/" class="font-semibold">Investor Relations</a>
+    <a href="/" class="font-semibold">Shop</a>
+    <a href="/" class="font-semibold">Account</a>
+
+    <button class="flex gap-x-3">
+      <i class="material-icons my-1" aria-label="Close menu icon">language</i>
+      <p class="flex flex-col items-start">
+        <span class="font-semibold">United States</span>
+        <span>English</span>
+      </p>
+    </button>
+
+  </nav>
+
+</div>

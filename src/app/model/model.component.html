@@ -1,3 +1,4 @@
+<main-home-header (displayMenu)="onDisplaySideMenu($event)"></main-home-header>
 <div class="relative h-screen flex flex-col items-center pt-32 background-image"
   [style.background-image]="modelImagePath">
   <h1 class="text-5xl font-semibold pb-2 text-black">Model <span class="uppercase">{{modelId}}</span></h1>
@@ -37,3 +38,6 @@
 </div>
 
 <app-model-details></app-model-details>
+
+<main-side-menu (displayMenu)="onDisplaySideMenu($event)" [isDisplay]="isDisplayMobileMenu">
+</main-side-menu>

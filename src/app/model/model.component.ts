@@ -10,6 +10,7 @@ export class ModelComponent implements OnInit {
 
   modelId!: string;
   modelImagePath!: string;
+  isDisplayMobileMenu = false
 
   constructor(private route: ActivatedRoute) { }
 
@@ -20,4 +21,7 @@ export class ModelComponent implements OnInit {
     });
   }
 
+  onDisplaySideMenu(isDisplayMenu: boolean) {
+    this.isDisplayMobileMenu = isDisplayMenu;
+  }
 }
