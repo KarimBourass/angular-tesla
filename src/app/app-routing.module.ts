@@ -5,6 +5,10 @@ const routes: Routes = [
   {
     path: '',
     loadChildren: () => import('./home/home.module').then(m => m.HomeModule),
+    data: {
+      title: `Electric Cars, Solar & Clean Energy`,
+      description: 'Tesla Home page'
+    }
   },
   {
     path: 'model',

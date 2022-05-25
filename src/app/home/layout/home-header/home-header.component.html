@@ -5,10 +5,10 @@
   </a>
 
   <nav class="hidden lg:flex items-center gap-x-8 relative">
-    <a href="" class="link-styling">Model S</a>
-    <a href="" class="link-styling">Model 3</a>
-    <a href="" class="link-styling">Model X</a>
-    <a href="" class="link-styling">Model Y</a>
+    <a [routerLink]="['/model', 's']" href="" class="link-styling">Model S</a>
+    <a [routerLink]="['/model', '3']" class="link-styling">Model 3</a>
+    <a [routerLink]="['/model', 'x']" class="link-styling">Model X</a>
+    <a [routerLink]="['/model', 'y']" class="link-styling">Model Y</a>
   </nav>
 
   <ul class="hidden lg:flex gap-x-8">

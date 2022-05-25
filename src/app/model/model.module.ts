@@ -2,17 +2,23 @@ import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { ModelComponent } from './model.component';
 import { RouterModule, Routes } from '@angular/router';
+import { ModelDetailsComponent } from './components/model-details/model-details.component';
 
 const routes: Routes = [
   {
-    path: '',
+    path: ':id',
     component: ModelComponent,
+    data: {
+      title: 'Model',
+      description: 'Model details page'
+    }
   },
 ];
 
 @NgModule({
   declarations: [
-    ModelComponent
+    ModelComponent,
+    ModelDetailsComponent
   ],
   imports: [
     CommonModule,
