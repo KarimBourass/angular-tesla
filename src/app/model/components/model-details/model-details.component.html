@@ -1,0 +1,14 @@
+<div class="relative min-h-screen py-40 bg-black text-white">
+
+  <div *ngFor="let detail of details"
+    class="flex flex-col pt-12 items-center md:flex-row md:justify-center md:even:flex-row-reverse">
+    <div class="h-52 lg:h-72 w-full max-w-5xl md:max-w-xl lg:max-w-lg">
+      <img [src]="detail.img" alt="Detail image" class="w-full h-full">
+    </div>
+    <div class="px-6 py-20 md:max-w-xl lg:even:px-20">
+      <p class="text-xl lg:text-2xl font-semibold mb-5">{{detail.text}}</p>
+      <p class="text-md lg:text-lg text-gray-200">{{detail.desc}}</p>
+    </div>
+
+  </div>
+</div>
