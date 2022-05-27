@@ -30,10 +30,10 @@ export class SEOService {
           }),
           filter((route) => route.outlet === 'primary'),
           mergeMap((route) => route.data)).subscribe((event) => {
-            this.titleService.setTitle(event['title'] + ' | Tesla');
+            this.titleService.setTitle(event['title']);
           });
     } else {
-      this.titleService.setTitle(title + ' | Tesla');
+      this.titleService.setTitle(title);
     }
   }
 }

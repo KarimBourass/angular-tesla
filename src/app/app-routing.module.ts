@@ -15,6 +15,14 @@ const routes: Routes = [
     loadChildren: () => import('./model/model.module').then(m => m.ModelModule),
   },
   {
+    path: 'account',
+    loadChildren: () => import('./core/login/login.module').then(m => m.LoginModule),
+    data: {
+      title: `Tesla SSO - Sign In`,
+      description: 'Tesla Sign In page'
+    }
+  },
+  {
     path: '',
     redirectTo: '/',
     pathMatch: 'full'
