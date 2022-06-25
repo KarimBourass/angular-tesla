@@ -1,7 +1,7 @@
 import { Component, OnInit, Output, EventEmitter } from '@angular/core';
 
 @Component({
-  selector: 'main-home-header',
+  selector: 'main-header',
   templateUrl: './main-header.component.html',
   styleUrls: ['./main-header.component.scss']
 })
