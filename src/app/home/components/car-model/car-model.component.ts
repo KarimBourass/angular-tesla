@@ -17,8 +17,7 @@ export class CarModelComponent implements OnInit {
       "range": "400",
       "time": "2.99",
       "topSpeed": "180",
-      "peakPower": "900"
-      ,
+      "peakPower": "900",
       "class": 'b'
     },
     {
@@ -41,7 +40,6 @@ export class CarModelComponent implements OnInit {
       "time": "1.55",
       "topSpeed": "150",
       "peakPower": "1,130",
-
       "class": 'c'
     },
     {
@@ -52,8 +50,7 @@ export class CarModelComponent implements OnInit {
       "range": "410",
       "time": "2.05",
       "topSpeed": "190",
-      "peakPower": "1,040"
-      ,
+      "peakPower": "1,040",
       "class": 'd'
     }
   ]

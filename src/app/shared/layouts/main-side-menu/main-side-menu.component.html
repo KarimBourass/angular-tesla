@@ -7,10 +7,10 @@
 
   <nav class="mt-10 flex flex-col gap-y-4">
     <div class="flex flex-col gap-y-4 lg:hidden">
-      <a href="/" class="font-semibold">Model S</a>
-      <a href="/" class="font-semibold">Model 3</a>
-      <a href="/" class="font-semibold">Model x</a>
-      <a href="/" class="font-semibold">Model y</a>
+      <a [routerLink]="['/model', 's']" class="font-semibold">Model S</a>
+      <a [routerLink]="['/model', '3']" class="font-semibold">Model 3</a>
+      <a [routerLink]="['/model', 'x']" class="font-semibold">Model x</a>
+      <a [routerLink]="['/model', 'y']" class="font-semibold">Model y</a>
     </div>
     <a href="/" class="font-semibold">Model Roof</a>
     <a href="/" class="font-semibold">Test Drive</a>
