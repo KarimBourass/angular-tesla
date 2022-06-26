@@ -17,7 +17,7 @@ export class ModelComponent implements OnInit {
   ngOnInit(): void {
     this.route.params.subscribe((params: any) => {
       this.modelId = params['id'];
-      this.modelImagePath = `url(/assets/images/model-${this.modelId}.jpg)`
+      this.modelImagePath = `url(/assets/images/${this.modelId}.jpg)`
     });
   }
 

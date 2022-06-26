@@ -5,14 +5,14 @@
   </a>
 
   <nav class="hidden lg:flex items-center gap-x-8 relative">
-    <a [routerLink]="['/model', 's']" class="link-styling">Model S</a>
-    <a [routerLink]="['/model', '3']" class="link-styling">Model 3</a>
-    <a [routerLink]="['/model', 'x']" class="link-styling">Model X</a>
-    <a [routerLink]="['/model', 'y']" class="link-styling">Model Y</a>
+    <a routerLink="/models" class="link-styling">Model S</a>
+    <a routerLink="/model3" class="link-styling">Model 3</a>
+    <a routerLink="/modelx" class="link-styling">Model X</a>
+    <a routerLink="/modely" class="link-styling">Model Y</a>
   </nav>
 
   <ul class="hidden lg:flex gap-x-8">
-    <li class="link-styling"><a href="/">Shop</a></li>
+    <li class="link-styling"><a routerLink='/'>Shop</a></li>
     <li class="link-styling"><a routerLink='/account/sign-in'>Account</a></li>
     <li class="link-styling" (click)="onDisplayMenu()">Menu</li>
   </ul>

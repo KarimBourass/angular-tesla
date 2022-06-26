@@ -7,10 +7,10 @@ import { ModelDetailsComponent } from './components/model-details/model-details.
 
 const routes: Routes = [
   {
-    path: ':id',
+    path: '',
     component: ModelComponent,
     data: {
-      title: 'Model',
+      title: 'Model | Tesla',
       description: 'Model details page'
     }
   },
