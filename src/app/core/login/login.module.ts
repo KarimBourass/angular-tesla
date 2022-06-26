@@ -4,27 +4,42 @@ import { CommonModule } from '@angular/common';
 import { SignInComponent } from './components/sign-in/sign-in.component';
 import { SignUpComponent } from './components/sign-up/sign-up.component';
 import { RouterModule, Routes } from '@angular/router';
+import { LoginComponent } from './login.component';
+import { LoginFooterComponent } from './components/login-footer/login-footer.component';
 
 const routes: Routes = [
   {
-    path: 'sign-in',
-    component: SignInComponent,
-  },
-  {
     path: '',
-    redirectTo: 'sign-in',
-    pathMatch: 'full'
+    component: LoginComponent,
+    children: [
+      {
+        path: 'sign-in',
+        component: SignInComponent,
+        data: {
+          title: `Tesla SSO - Sign In`,
+          description: 'Tesla Sign In page'
+        }
+      },
+      {
+        path: '',
+        redirectTo: 'sign-in',
+        pathMatch: 'full'
+      },
+      {
+        path: '**',
+        redirectTo: 'sign-in'
+      },
+    ]
   },
-  {
-    path: '**',
-    redirectTo: 'sign-in'
-  },
+
 ];
 
 @NgModule({
   declarations: [
     SignInComponent,
-    SignUpComponent
+    SignUpComponent,
+    LoginComponent,
+    LoginFooterComponent
   ],
   imports: [
     CommonModule,

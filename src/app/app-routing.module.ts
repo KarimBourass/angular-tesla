@@ -17,10 +17,6 @@ const routes: Routes = [
   {
     path: 'account',
     loadChildren: () => import('./core/login/login.module').then(m => m.LoginModule),
-    data: {
-      title: `Tesla SSO - Sign In`,
-      description: 'Tesla Sign In page'
-    }
   },
   {
     path: '',
