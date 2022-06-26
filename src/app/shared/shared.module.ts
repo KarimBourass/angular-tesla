@@ -3,13 +3,15 @@ import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { MainHeaderComponent } from './layouts/main-header/main-header.component';
 import { MainSideMenuComponent } from './layouts/main-side-menu/main-side-menu.component';
+import { MainFooterComponent } from './layouts/main-footer/main-footer.component';
 
 
 
 @NgModule({
   declarations: [
     MainHeaderComponent,
-    MainSideMenuComponent
+    MainSideMenuComponent,
+    MainFooterComponent
   ],
   imports: [
     CommonModule,
@@ -17,7 +19,8 @@ import { MainSideMenuComponent } from './layouts/main-side-menu/main-side-menu.c
   ],
   exports: [
     MainHeaderComponent,
-    MainSideMenuComponent
+    MainSideMenuComponent,
+    MainFooterComponent
   ]
 })
 export class SharedModule { }
