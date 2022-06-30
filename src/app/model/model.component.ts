@@ -9,6 +9,7 @@ import { ActivatedRoute } from '@angular/router';
 export class ModelComponent implements OnInit {
 
   modelId!: string;
+  modelName!: string;
   modelImagePath!: string;
   isDisplayMobileMenu = false
 
@@ -16,7 +17,8 @@ export class ModelComponent implements OnInit {
 
   ngOnInit(): void {
     this.route.params.subscribe((params: any) => {
-      this.modelId = params['id'];
+      this.modelId = params['id']
+      this.modelName = params['id'].charAt(params['id'].length - 1)
       this.modelImagePath = `url(/assets/images/${this.modelId}.jpg)`
     });
   }
