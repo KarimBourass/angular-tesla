@@ -3,7 +3,6 @@ import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { MainHeaderComponent } from './layouts/main-header/main-header.component';
 import { MainSideMenuComponent } from './layouts/main-side-menu/main-side-menu.component';
-import { MainFooterComponent } from './layouts/main-footer/main-footer.component';
 
 
 
@@ -11,7 +10,6 @@ import { MainFooterComponent } from './layouts/main-footer/main-footer.component
   declarations: [
     MainHeaderComponent,
     MainSideMenuComponent,
-    MainFooterComponent
   ],
   imports: [
     CommonModule,
@@ -20,7 +18,6 @@ import { MainFooterComponent } from './layouts/main-footer/main-footer.component
   exports: [
     MainHeaderComponent,
     MainSideMenuComponent,
-    MainFooterComponent
   ]
 })
 export class SharedModule { }

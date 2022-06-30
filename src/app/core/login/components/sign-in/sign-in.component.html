@@ -1,4 +1,4 @@
-<header class="flex justify-between items-center px-4 lg:px-10 py-3 w-full">
+<header class="flex justify-between items-center px-4 lg:px-10 py-4 w-full">
 
   <a routerLink="/" aria-label="tesla logo">
     <img src="/assets/images/logo.svg" alt="Tesla home page" class="w-32 h-4">
@@ -20,14 +20,16 @@
     <div class="flex flex-col gap-y-2">
       <label for="firstname" class="ml-3 text-gray-700 font-semibold flex items-center ">
         <span>Email Adress</span>
-        <i class="material-icons ml-2 text-md" aria-label="Info icon">info</i>
+        <i class="material-icons ml-2 text-md text-blue-600" aria-label="Info icon">info</i>
       </label>
-      <input class="bg-gray-100 rounded-full py-3 px-4 text-gray-700 focus:outline-none" type="text">
+      <input
+        class="py-2 px-4 bg-gray-100 text-gray-700 rounded-full focus:outline-gray-300"
+        type="text">
     </div>
 
     <div class="flex flex-col gap-y-2 mt-5">
       <label for="firstname" class="ml-3 text-gray-700 font-semibold">Password</label>
-      <input class="bg-gray-100 rounded-full py-3 px-4 text-gray-700 focus:outline-none" type="text">
+      <input class="bg-gray-100 rounded-full py-3 px-4 text-gray-700 focus:outline-gray-300" type="text">
     </div>
   </form>
 
