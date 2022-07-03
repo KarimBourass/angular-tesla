@@ -4,6 +4,7 @@
 
 @layer base {
   html {
-    @apply font-raleway;
+    font-family: font-raleway;
+    font-display: swap;
   }
 }
