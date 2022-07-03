@@ -19,7 +19,7 @@ export class ModelComponent implements OnInit {
     this.route.params.subscribe((params: any) => {
       this.modelId = params['id']
       this.modelName = params['id'].charAt(params['id'].length - 1)
-      this.modelImagePath = `url(/assets/images/${this.modelId}.jpg)`
+      this.modelImagePath = `url(/assets/images/${this.modelId}.webp)`
     });
   }
 
