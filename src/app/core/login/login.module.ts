@@ -23,11 +23,19 @@ const routes: Routes = [
       {
         path: '',
         redirectTo: 'sign-in',
-        pathMatch: 'full'
+        pathMatch: 'full',
+        data: {
+          title: `Tesla SSO - Sign In`,
+          description: 'Tesla Sign In page'
+        }
       },
       {
         path: '**',
-        redirectTo: 'sign-in'
+        redirectTo: 'sign-in',
+        data: {
+          title: `Tesla SSO - Sign In`,
+          description: 'Tesla Sign In page'
+        }
       },
     ]
   },
