@@ -1,17 +1,17 @@
 <div class="relative h-screen overflow-y-scroll scroll-mandatory">
   <section *ngFor="let model of models" class="h-screen flex flex-col items-center pt-32 snap-start background-image"
     [style.background-image]="'url(/assets/images/' + model.image + ')'">
-    <h1 class="text-5xl pb-2">{{model.title}}</h1>
-    <p>Order Online for <span class="border-b-2 border-black pb-px">Touchless Delivery</span></p>
+    <h1 class="text-5xl pb-2 slide_to_top">{{model.title}}</h1>
+    <p class="slide_to_top">Order Online for <span class="border-b-2 border-black pb-px">Touchless Delivery</span></p>
 
     <div class="relative bottom-96 flex flex-col md:flex-row gap-4">
-      <button class="bg-[#3b3e42] text-white py-2 w-64 text-sm	rounded-full">CUSTOM ORDER</button>
-      <button class="bg-[#e6e7e5] text-gray-600 py-2 w-64 text-sm rounded-full	">EXISTING
+      <button class="bg-[#3b3e42] text-white py-2 w-64 text-sm	rounded-full slide_to_right">CUSTOM ORDER</button>
+      <button class="bg-[#e6e7e5] text-gray-600 py-2 w-64 text-sm rounded-full	slide_to_left">EXISTING
         INVENTORY</button>
 
     </div>
 
-    <button *ngIf="model.id==0" class="absolute bottom-3 cursor-pointer">
+    <button *ngIf="model.id==0" class="absolute bottom-3 cursor-pointer slide_to_bottum">
       <i class="material-icons animate-bounce text-3xl text-slate-700" aria-label="Scroll icon">expand_more</i>
     </button>
 
