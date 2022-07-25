@@ -1,25 +1,28 @@
-import { SharedModule } from './../shared/shared.module';
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { ModelComponent } from './model.component';
+import { ModelSComponent } from './model-s.component';
 import { RouterModule, Routes } from '@angular/router';
+import { SharedModule } from 'src/app/shared/shared.module';
 import { ModelDetailsComponent } from './components/model-details/model-details.component';
+
 
 const routes: Routes = [
   {
     path: '',
-    component: ModelComponent,
+    component: ModelSComponent,
     data: {
-      title: 'Model | Tesla',
+      title: 'Model S | Tesla',
       description: 'Model details page'
     }
   },
 ];
 
+
 @NgModule({
   declarations: [
-    ModelComponent,
+    ModelSComponent,
     ModelDetailsComponent
+
   ],
   imports: [
     CommonModule,
@@ -27,4 +30,4 @@ const routes: Routes = [
     SharedModule
   ]
 })
-export class ModelModule { }
+export class ModelSModule { }

@@ -1,6 +1,5 @@
 <main-header (displayMenu)="onDisplaySideMenu($event)"></main-header>
-<div class="relative h-screen flex flex-col items-center pt-32 background-image"
-  [style.background-image]="modelImagePath">
+<div class="relative h-screen flex flex-col items-center pt-32 background-image">
   <h1 class="text-5xl font-semibold pb-2 text-black">Model <span class="uppercase">{{modelName}}</span></h1>
   <div class="absolute bottom-0 h-48 flex justify-center items-center w-full blak-gradient-bg-bottom">
     <div
@@ -41,3 +40,6 @@
 
 <main-side-menu (displayMenu)="onDisplaySideMenu($event)" [isDisplay]="isDisplayMobileMenu">
 </main-side-menu>
+
+
+<img [src]="'/assets/images/models.webp'" alt="">
