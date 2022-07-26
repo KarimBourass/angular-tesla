@@ -5,8 +5,14 @@
 @tailwind components;
 @tailwind utilities;
 
+@font-face {
+  font-family: "gotham";
+  src: url("/assets/font/gotham.otf");
+}
+
+
 @layer base {
-  html {
-    @apply font-raleway;
+  body {
+      @apply font-gotham;
   }
 }

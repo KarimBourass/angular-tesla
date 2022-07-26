@@ -1,9 +1,9 @@
 module.exports = {
-  content: ["./src/**/*.html"],
+  content: ["./src/**/*.{html,ts}"],
   theme: {
     extend: {
       fontFamily: {
-        raleway: ["Raleway", "sans-serif"],
+        gotham: ["gotham", "sans-serif"],
       },
       keyframes: {
         slidetoToTop: {
