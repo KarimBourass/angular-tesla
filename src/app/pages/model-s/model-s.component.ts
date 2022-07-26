@@ -5,20 +5,10 @@ import { Component, OnInit } from '@angular/core';
   templateUrl: './model-s.component.html',
   styleUrls: ['./model-s.component.scss']
 })
-export class ModelSComponent implements OnInit {
+export class ModelSComponent {
 
-  modelId: string = 's';
-  modelName: string = 's';
-  modelImagePath: string = "/assets/images/models.webp";
-  isDisplayMobileMenu = false
 
   constructor() { }
 
-  ngOnInit(): void {
-  }
-
-  onDisplaySideMenu(isDisplayMenu: boolean) {
-    this.isDisplayMobileMenu = isDisplayMenu;
-  }
 
 }

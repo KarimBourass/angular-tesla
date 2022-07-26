@@ -1,10 +1,10 @@
+import { Component, OnInit} from '@angular/core';
 import { animate, style, transition, trigger } from '@angular/animations';
-import { Component, EventEmitter, Input, OnInit, Output } from '@angular/core';
 
 @Component({
-  selector: 'main-side-menu',
-  templateUrl: './main-side-menu.component.html',
-  styleUrls: ['./main-side-menu.component.scss'],
+  selector: 'app-header',
+  templateUrl: './header.component.html',
+  styleUrls: ['./header.component.scss'],
   animations: [
     trigger(
       'inOutAnimation',
@@ -27,21 +27,23 @@ import { Component, EventEmitter, Input, OnInit, Output } from '@angular/core';
     )
   ]
 })
-export class MainSideMenuComponent implements OnInit {
+export class HeaderComponent implements OnInit {
 
-  @Output() displayMenu = new EventEmitter<boolean>();
-  @Input() isDisplay: boolean = false;
-
-
+  // @Output() displayMenu = new EventEmitter<boolean>();
+  isDisplay: boolean = false;
   constructor() { }
 
   ngOnInit(): void {
   }
 
 
-  onCloseMenu() {
-    this.isDisplay = false;
-    this.displayMenu.emit(this.isDisplay)
+  onDisplayMenu() {
+    this.isDisplay = true
+    // this.displayMenu.emit(true)
   }
 
+  onCloseMenu() {
+    this.isDisplay = false;
+    // this.displayMenu.emit(this.isDisplay)
+  }
 }

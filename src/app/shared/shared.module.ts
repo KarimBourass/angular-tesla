@@ -1,23 +1,20 @@
 import { RouterModule } from '@angular/router';
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { MainHeaderComponent } from './layouts/main-header/main-header.component';
-import { MainSideMenuComponent } from './layouts/main-side-menu/main-side-menu.component';
+import { HeaderComponent } from './layouts/header/header.component';
 
 
 
 @NgModule({
   declarations: [
-    MainHeaderComponent,
-    MainSideMenuComponent,
+    HeaderComponent,
   ],
   imports: [
     CommonModule,
     RouterModule
   ],
   exports: [
-    MainHeaderComponent,
-    MainSideMenuComponent,
+    HeaderComponent,
   ]
 })
 export class SharedModule { }
