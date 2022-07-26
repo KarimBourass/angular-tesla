@@ -1,7 +1,7 @@
 <div class="relative h-screen overflow-y-scroll scroll-mandatory">
   <section *ngFor="let model of models" class="h-screen flex flex-col items-center pt-32 snap-start background-image"
     [style.background-image]="'url(/assets/images/' + model.image + ')'">
-    <h1 class="text-5xl pb-2 animate-slidetoToTop">{{model.title}}</h1>
+    <h1 class="text-5xl pb-2 animate-slidetoToTop font-extrabold">{{model.title}}</h1>
     <p class="animate-slidetoToTop">Order Online for <span class="border-b-2 border-black pb-px">Touchless Delivery</span></p>
 
     <div class="relative bottom-96 flex flex-col md:flex-row gap-4">

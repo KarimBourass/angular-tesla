@@ -9,17 +9,17 @@ export class ModelDetailsComponent implements OnInit {
 
   details = [
     {
-      img: '/assets/images/connected.webp',
+      img: '/assets/images/model-s/connected.webp',
       text: 'Stay Connected',
       desc: 'Instantly connect with multi-device Bluetooth, or fast charge devices with wireless and 36-watt USB-C charging.'
     },
     {
-      img: '/assets/images/audio.webp',
+      img: '/assets/images/model-s/audio.webp',
       text: 'Immersive Sound',
       desc: 'A 22-speaker, 960-watt audio system with Active Road Noise Reduction offers immersive listening and studio-grade sound quality.'
     },
     {
-      img: '/assets/images/game.webp',
+      img: '/assets/images/model-s/game.webp',
       text: 'Room for Everything',
       desc: 'With front and rear trunks and fold-flat seats you can fit your bike without taking the wheel off—and your luggage too.'
     },
