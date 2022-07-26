@@ -1,4 +1,4 @@
-import { Component, OnInit} from '@angular/core';
+import { Component, Input, OnInit} from '@angular/core';
 import { animate, style, transition, trigger } from '@angular/animations';
 
 @Component({
@@ -29,7 +29,7 @@ import { animate, style, transition, trigger } from '@angular/animations';
 })
 export class HeaderComponent implements OnInit {
 
-  // @Output() displayMenu = new EventEmitter<boolean>();
+  @Input() textColor: string = 'black'
   isDisplay: boolean = false;
   constructor() { }
 
@@ -39,11 +39,9 @@ export class HeaderComponent implements OnInit {
 
   onDisplayMenu() {
     this.isDisplay = true
-    // this.displayMenu.emit(true)
   }
 
   onCloseMenu() {
     this.isDisplay = false;
-    // this.displayMenu.emit(this.isDisplay)
   }
 }
