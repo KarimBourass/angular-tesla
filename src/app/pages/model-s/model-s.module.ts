@@ -4,6 +4,7 @@ import { ModelSComponent } from './model-s.component';
 import { RouterModule, Routes } from '@angular/router';
 import { SharedModule } from 'src/app/shared/shared.module';
 import { ModelDetailsComponent } from './components/model-details/model-details.component';
+import { ModelSHeroComponent } from './components/model-s-hero/model-s-hero.component';
 
 
 const routes: Routes = [
@@ -21,7 +22,8 @@ const routes: Routes = [
 @NgModule({
   declarations: [
     ModelSComponent,
-    ModelDetailsComponent
+    ModelDetailsComponent,
+    ModelSHeroComponent,
 
   ],
   imports: [

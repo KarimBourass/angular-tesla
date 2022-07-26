@@ -1,0 +1,22 @@
+.background-image {
+  background: no-repeat center center url('/assets/images/models.webp');
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+.background-interior {
+  background: no-repeat center center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+.blak-gradient-bg-bottom {
+  background: linear-gradient(to bottom, transparent, black 50%);
+}
+.blak-gradient-bg-top {
+  background: linear-gradient(to bottom, #000 50%, transparent);
+}
