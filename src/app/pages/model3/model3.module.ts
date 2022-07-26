@@ -1,3 +1,4 @@
+import { Model3HeroComponent } from './components/model3-hero/model3-hero.component';
 import { SharedModule } from 'src/app/shared/shared.module';
 import { Model3Component } from './model3.component';
 import { NgModule } from '@angular/core';
@@ -18,7 +19,8 @@ const routes: Routes = [
 
 @NgModule({
   declarations: [
-    Model3Component
+    Model3Component,
+    Model3HeroComponent
   ],
   imports: [
     CommonModule,
