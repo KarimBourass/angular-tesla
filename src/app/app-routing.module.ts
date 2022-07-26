@@ -6,10 +6,10 @@ const routes: Routes = [
     path: 'models',
     loadChildren: () => import('./pages/model-s/model-s.module').then(m => m.ModelSModule),
   },
-  // {
-  //   path: ':id',
-  //   loadChildren: () => import('./model/model.module').then(m => m.ModelModule),
-  // },
+  {
+    path: 'model3',
+    loadChildren: () => import('./pages/model3/model3.module').then(m => m.Model3Module),
+  },
   {
     path: 'account',
     loadChildren: () => import('./core/login/login.module').then(m => m.LoginModule),
